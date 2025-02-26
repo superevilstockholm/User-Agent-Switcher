@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="User-Agent Switcher made by bjorki199" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User-Agent Switcher</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif !important;
+        width: 270px;
+      }
+    </style>
+  </head>
+  <body data-bs-theme="dark" class="px-2 py-3">
+    <h3 class="p-0 m-0 mb-1 fw-bold" style="font-size: 0.95rem;">
+      Pilih Jenis User-Agent
+    </h3>
+    <label for="current-useragent" class="text-muted mb-1 fw-bold" style="font-size: 0.8rem;">Current UserAgent: <span id="current-useragent" class="fw-normal"></span></label>
+    <select name="devices" class="form-select py-0 mb-2" style="font-size: 0.85rem;">
+      <option disabled selected>Select Device</option>
+      <option value="android">android</option>
+      <option value="ios">ios</option>
+      <option value="windows">windows</option>
+      <option value="mac">mac</option>
+      <option value="linux">linux</option>
+    </select>
+    <select name="browsers" class="form-select py-0 mb-2" style="font-size: 0.85rem;">
+      <option disabled selected>Select Browsers</option>
+      <option value="chrome">chrome</option>
+      <option value="firefox">firefox</option>
+      <option value="edge">edge</option>
+      <option value="opera">opera</option>
+    </select>
+    <button id="setUserAgent" class="btn btn-sm btn-primary py-1 w-100" style="font-size: 0.85rem;">Change User-Agent</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "User Agent Switcher",
+  "version": "1.0",
+  "author": "bjorki199",
+  "description": "Mengubah User-Agent secara acak di semua website.",
+  "permissions": ["declarativeNetRequest", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon.png",
+    "256": "icon.png",
+    "512": "icon.png"
+  }
+}
