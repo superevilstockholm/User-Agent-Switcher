@@ -1,4 +1,4 @@
-### How to istall:
+### How to install:
 1. CLone this repo, if you download then extract
 2. Open ```chrome://extensions/``` then turn on ```developer mode```
 3. Click ```Load Unpacked``` dan pilih direktori / folder yang sudah di clone / di ekstrak
